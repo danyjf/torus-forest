@@ -202,7 +202,7 @@ const scene = {
             // values are always between 0 and 2*PI
 
             let cameraSpeed = 0.1;
-            let lampSpeed = 0.02;
+            let lampSpeed = 0.01;
 
             if(keys.SHIFT) {
                 cameraSpeed *= 4;
