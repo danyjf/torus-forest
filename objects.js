@@ -65,8 +65,8 @@ const objects = {
     createTree: function createTree(posX, posY, posZ) {
         // Create trunk
         const trunkGeometry = new THREE.CylinderGeometry(0.3, 0.3, 2, 16);
-        const trunkTexture = new THREE.TextureLoader().load("../assets/textures/bark/Bark_06_height.png");
-        const trunkNormalMap = new THREE.TextureLoader().load("../assets/textures/bark/Bark_06_normal.jpg");
+        const trunkTexture = new THREE.TextureLoader().load("assets/textures/bark/Bark_06_height.png");
+        const trunkNormalMap = new THREE.TextureLoader().load("assets/textures/bark/Bark_06_normal.jpg");
         const trunkMaterial = new THREE.MeshPhongMaterial({color: 0xcc6600, map: trunkTexture, normalMap: trunkNormalMap});
         const trunk = new THREE.Mesh(trunkGeometry, trunkMaterial);
 
@@ -78,11 +78,11 @@ const objects = {
 
         // Create leafs
         let leavesGeometry = new THREE.SphereGeometry(0.7, 32, 16);
-        const leavesTexture = new THREE.TextureLoader().load("../assets/textures/leaves/Hedge_001_Height.png");
+        const leavesTexture = new THREE.TextureLoader().load("assets/textures/leaves/Hedge_001_Height.png");
         leavesTexture.wrapS = THREE.RepeatWrapping;
         leavesTexture.wrapT = THREE.RepeatWrapping;
         leavesTexture.repeat.set(2, 2);
-        const leavesNormalMap = new THREE.TextureLoader().load("../assets/textures/leaves/Hedge_001_Normal.jpg");
+        const leavesNormalMap = new THREE.TextureLoader().load("assets/textures/leaves/Hedge_001_Normal.jpg");
         leavesNormalMap.wrapS = THREE.RepeatWrapping;
         leavesNormalMap.wrapT = THREE.RepeatWrapping;
         leavesNormalMap.repeat.set(2, 2);
